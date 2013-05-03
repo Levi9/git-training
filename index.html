@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Levi9 ::  git training</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+  <style>
+    #Cover h1
+    {
+      margin:15px 0 0;
+      color:#CE6E2F;
+      text-align:center;
+      font-size:70px;
+    }
+    #Cover p
+    {
+      margin:240px 0 0;
+      text-align:center;
+      color:#FFF;
+      font-style:italic;
+      font-size:20px;
+    }
+    #Cover p a
+    {
+      color:#FFF;
+    }
+    #Picture h2
+    {
+      color:#FFF;
+    }
+    #SeeMore h2
+    {
+      font-size:100px
+    }
+    #SeeMore img
+    {
+      width:0.72em;
+      height:0.72em;`
+    }
+  </style>
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Levi9 ::  git training</h1>
+    <p>
+      Vitaly Domnikov, @dotcypress <br/>
+      Vladimir Kirillov, @proger
+    </p>
+  </header>
+  <section class="slide cover" id="Cover">
+    <div>
+      <h1>Levi9 ::  git training</h1>
+      <p>
+        Vitaly Domnikov, <a href="https://github.com/dotCypress">@dotcypress</a><br/>
+        Vladimir Kirillov,<a href="https://github.com/proger">@proger</a>
+      </p>
+      <img src="pictures/cover.png" alt="">
+    </div>
+  </section>
+  <section class="slide">
+    <div>
+      <h2>Agenda</h2>
+      <ol>
+        <li>git clone --bare</li>
+        <li>git rebase -i</li>
+        <li>git add -p</li>
+        <li>git status | grep deleted | awk '{print $3}' | xargs git rm -f</li>
+        <li>git read-tree</li>
+        <li>git cherry-pick</li>
+        <li>git config --global push.default tracking</li>
+        <li>git bisect</li>
+        <li>(git diff; git diff --cached) | vim - и git commit -v</li>
+      </ol>
+    </div>
+  </section>
+  <section class="slide">
+    <div>
+      <h2>Best practices</h2>
+      <ol>
+        <li>если проект большой и в 1 репе N компонентов -- то в одной ветке нельзя работать над 2+ компонентами</li>
+        <li>git clone --bare + много чекаутов для разных веток —-- лучше чем git stash</li>
+        <li>нельзя использовать git add . или -[Aa] :)</li>
+        <li>.gitignore для платформы</li>
+        <li>в фич-ветке история коммитов может отличаться до мержа</li>
+        <li>git submodules — говно</li>
+        <li>gitflow — не говно, рассказать про стратегии бранчевания</li>
+      </ol>
+    </div>
+  </section>
+  <section class="slide">
+    <div>
+      <h2>git + java</h2>
+      <ol>
+        <li>ant -- не серьёзно</li>
+        <li>maven</li>
+        <li>sbt / scala -- TODO</li>
+        <li>leiningen / clojure</li>
+        <li>submodules</li>
+      </ol>
+    </div>
+  </section>
+  <section class="slide">
+    <div>
+      <h2>git vs cvs/svn</h2>
+      <ol>
+        <li>децентрализованность</li>
+        <li>у гита нет частичных чекаутов</li>
+        <li>мерж - это не больно, а очень даже приятно</li>
+      </ol>
+    </div>
+  </section>
+  <section class="slide shout">
+    <div>
+      <h2>Вопросы</h2>
+    </div>
+  </section>
+  <p class="badge"><a href="https://github.com/Levi9/git-training">Fork me on Github</a></p>
+  <div class="progress"><div></div></div>
+  <script src="shower/shower.min.js"></script>
+</body>
+</html>
