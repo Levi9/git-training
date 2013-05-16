@@ -38,6 +38,9 @@
       width:0.72em;
       height:0.72em;`
     }
+    .taf img{
+      margin: 100px 0 0 -40px;
+    }
   </style>
 </head>
 <body class="list">
@@ -53,7 +56,7 @@
       <h1>Levi9 ::  git training</h1>
       <p>
         Vitaly Domnikov, <a href="https://github.com/dotCypress">@dotcypress</a><br/>
-        Vladimir Kirillov,<a href="https://github.com/proger">@proger</a>
+        Vladimir Kirillov, <a href="https://github.com/proger">@proger</a>
       </p>
       <img src="pictures/cover.png" alt="">
     </div>
@@ -61,17 +64,17 @@
   <section class="slide">
     <div>
       <h2>Agenda</h2>
-      <ol>
-        <li>git clone --bare</li>
-        <li>git rebase -i</li>
-        <li>git add -p</li>
-        <li>git status | grep deleted | awk '{print $3}' | xargs git rm -f</li>
-        <li>git read-tree</li>
-        <li>git cherry-pick</li>
-        <li>git config --global push.default tracking</li>
-        <li>git bisect</li>
-        <li>(git diff; git diff --cached) | vim - и git commit -v</li>
-      </ol>
+      <ul>
+        <li>Основы Git</li>
+        <li>Ветвление в Git</li>
+        <li>Распределённый Git</li>
+        <li>Git + Java</li>
+        <li>Git на сервере</li>
+        <li>Инструменты Git</li>
+        <li>Настройка Git</li>
+        <li>Git vs SVN</li>
+        <li>Git изнутри</li>
+      </ul>
     </div>
   </section>
   <section class="slide">
@@ -90,29 +93,113 @@
   </section>
   <section class="slide">
     <div>
-      <h2>git + java</h2>
-      <ol>
-        <li>ant -- не серьёзно</li>
-        <li>maven</li>
-        <li>sbt / scala -- TODO</li>
-        <li>leiningen / clojure</li>
-        <li>submodules</li>
-      </ol>
+      <h2>Основы Git</h2>
+      <ul>
+        <li>Создание Git-репозитория</li>
+        <li>Запись изменений в репозиторий</li>
+        <li>Просмотр истории коммитов</li>
+        <li>Отмена изменений</li>
+        <li>Работа с удалёнными репозиторями</li>
+        <li>Работа с метками</li>
+      </ul>
     </div>
   </section>
   <section class="slide">
     <div>
-      <h2>git vs cvs/svn</h2>
-      <ol>
-        <li>децентрализованность</li>
-        <li>у гита нет частичных чекаутов</li>
-        <li>мерж - это не больно, а очень даже приятно</li>
-      </ol>
+      <h2>Ветвление в Git</h2>
+      <ul>
+        <li>Что такое ветка?</li>
+        <li>Основы ветвления и слияния</li>
+        <li>Управление ветками</li>
+        <li>Приёмы работы с ветками</li>
+        <li>Удалённые ветки</li>
+        <li>Перемещение</li>
+      </ul>
     </div>
   </section>
-  <section class="slide shout">
+  <section class="slide">
     <div>
-      <h2>Вопросы</h2>
+      <h2>Распределённый Git</h2>
+      <ul>
+        <li>Распределённые рабочие процессы</li>
+        <li>Cтратегии ветвления</li>
+        <li>Gitflow</li>
+        <li>GitHub</li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide">
+    <div>
+      <h2>Git + Java</h2>
+      <ul>
+        <li>ant - не серьёзно</li>
+        <li>maven</li>
+        <li>sbt / scala -- TODO</li>
+        <li>leiningen / clojure</li>
+        <li>submodules</li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide">
+    <div>
+      <h2>Git на сервере</h2>
+      <ul>
+        <li>Протоколы</li>
+        <li>GitWeb</li>
+        <li>Gitosis</li>
+        <li>Gitolite</li>
+        <li>Git-хостинг</li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide">
+    <div>
+      <h2>Инструменты Git</h2>
+      <ul>
+        <li>Выбор ревизии</li>
+        <li>Интерактивное индексирование</li>
+        <li>Перезапись истории</li>
+        <li>Отладка с помощью Git</li>
+        <li>Подмодули</li>
+        <li>Слияние поддеревьев</li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide">
+    <div>
+      <h2>Настройка Git</h2>
+      <ul>
+        <li>Конфигурирование Git</li>
+        <li>Git-атрибуты</li>
+        <li>Перехватчики в Git</li>
+        <li>Пример навязывания политики с помощью Git</li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide">
+    <div>
+      <h2>Git vs SVN</h2>
+      <ul>
+        <li>Git и Subversion</li>
+        <li>Миграция на Git</li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide">
+    <div>
+      <h2>Git изнутри</h2>
+      <ul>
+        <li>Объекты в Git</li>
+        <li>Ссылки в Git</li>
+        <li>Pack-файлы</li>
+        <li>Спецификации ссылок</li>
+        <li>Протоколы передачи</li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide taf">
+    <div>
+      <img src="pictures/taf.jpg" alt="">
     </div>
   </section>
   <p class="badge"><a href="https://github.com/Levi9/git-training">Fork me on Github</a></p>
