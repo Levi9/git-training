@@ -37,3 +37,14 @@
 ### ништяки
 
 * https://github.com/robbyrussell/oh-my-zsh
+
+### запомнить
+
+    % git co -b upmaster up/master
+    Branch upmaster set up to track remote branch master from up.
+    Switched to a new branch 'upmaster'
+    % git remote -v                       dev/ios/NSLayoutEquations:upmaster
+    origin  git@github.com:proger/NSLayoutEquations.git (fetch)
+    origin  git@github.com:proger/NSLayoutEquations.git (push)
+    up      https://github.com/gormster/NSLayoutEquations.git (fetch)
+    up      https://github.com/gormster/NSLayoutEquations.git (push)
